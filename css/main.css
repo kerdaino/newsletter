@@ -87,6 +87,109 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /* global styles */
+
+   @font-face{
+    font-family: homefont;
+    src: url(/fonts/Roboto-Regular.ttf);
+   }
+
+   @font-face {
+    font-family: boldfont;
+    src: url(/fonts/Roboto-Bold.ttf);
+   }
+
+   body{
+    font-family: homefont;
+    background-color: hsl(235, 18%, 26%);
+    padding: 0;
+    margin: 0;
+    /* width: fit-content; */
+   }
+
+   .content-wrapper{
+    background-color: hsl(0, 0%, 100%);
+   }
+
+   h1{
+    font-family: boldfont;
+    color: hsl(235, 18%, 26%);
+    text-transform: capitalize;
+   }
+
+   p ,li{
+    text-align: justify;
+    font-size: 1em;
+    width: 90%;
+   }
+
+   label{
+    color: hsl(235, 18%, 26%);
+    font-family: boldfont;
+   }
+
+   input{
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    padding: 15px;
+   }
+
+   button{
+    border: none;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px;
+   }
+
+   button:hover{
+    background-color: hsl(4, 100%, 67%);
+    cursor: pointer;
+   }
+
+
+   /* mobile styles */
+
+  .content-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .half-width1{
+    display: flex;
+    width: 100%;
+  }
+
+  .half-width1 img{
+    width: 100%;
+  }
+
+  .half-width2{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    text-align: justify;
+    margin-left: 10px;
+    padding: 10px;
+    padding-bottom: 10px;
+    font-size: 1em;
+  }
+
+  .half-width2 h1 {
+    font-size: 3em;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
