@@ -87,108 +87,144 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   /* global styles */
+/* global styles */
 
-   @font-face{
-    font-family: homefont;
-    src: url(/fonts/Roboto-Regular.ttf);
-   }
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: hsl(235, 18%, 26%);
+  padding: 0;
+  margin: 0;
+}
 
-   @font-face {
-    font-family: boldfont;
-    src: url(/fonts/Roboto-Bold.ttf);
-   }
+.content-wrapper {
+  background-color: hsl(0, 0%, 100%);
+}
 
-   body{
-    font-family: homefont;
-    background-color: hsl(235, 18%, 26%);
-    padding: 0;
-    margin: 0;
-    /* width: fit-content; */
-   }
+h1 {
+  font-family: 'Roboto', sans-serif;
+  color: hsl(235, 18%, 26%);
+  text-transform: capitalize;
+  font-weight: 700;
+}
 
-   .content-wrapper{
-    background-color: hsl(0, 0%, 100%);
-   }
+p,
+li {
+  text-align: justify;
+  font-size: 1em;
+  width: 90%;
+}
 
-   h1{
-    font-family: boldfont;
-    color: hsl(235, 18%, 26%);
-    text-transform: capitalize;
-   }
+label {
+  color: hsl(235, 18%, 26%);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
 
-   p ,li{
-    text-align: justify;
-    font-size: 1em;
-    width: 90%;
-   }
+input {
+  border: 1px solid hsl(231, 7%, 60%);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px;
+  padding: 15px;
+}
 
-   label{
-    color: hsl(235, 18%, 26%);
-    font-family: boldfont;
-   }
+button {
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px;
+  font-weight: 700;
+}
 
-   input{
-    border: 1px solid hsl(231, 7%, 60%);
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 20px;
-    padding: 15px;
-   }
+button:hover {
+  background-color: hsl(4, 100%, 67%);
+  cursor: pointer;
+  transition: 0.6s;
+}
 
-   button{
-    border: none;
-    background-color: hsl(234, 29%, 20%);
-    color: hsl(0, 0%, 100%);
-    padding: 15px;
-    border-radius: 5px;
-    margin: 20px;
-   }
+ul {
+  list-style-image: url(../img/icon-list.svg);
+}
 
-   button:hover{
-    background-color: hsl(4, 100%, 67%);
-    cursor: pointer;
-   }
+li {
+  margin-bottom: 10px;
+  padding-top: 0;
+  margin-top: 0;
+}
 
+ .hide {
+  display: none;
+} 
 
-   /* mobile styles */
+/* mobile styles */
 
-  .content-wrapper{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-bottom: 40px;
-  }
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 40px;
+}
 
-  .half-width1{
-    display: flex;
-    width: 100%;
-  }
+.half-width1 {
+  display: flex;
+  width: 100%;
+}
 
-  .half-width1 img{
-    width: 100%;
-  }
+.half-width1 img {
+  width: 100%;
+}
 
-  .half-width2{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    text-align: justify;
-    margin-left: 10px;
-    padding: 10px;
-    padding-bottom: 10px;
-    font-size: 1em;
-  }
+.half-width2 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  text-align: justify;
+  margin-left: 10px;
+  padding: 10px;
+  padding-bottom: 10px;
+  font-size: 1em;
+}
 
-  .half-width2 h1 {
-    font-size: 3em;
-  }
+.half-width2 h1 {
+  font-size: 3em;
+}
 
-  form{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-  }
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.content-wrapper2 {
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding-left: 10px;
+  height: 100vh;
+}
+
+.content-wrapper2 img {
+  width: 15%;
+  margin: 20px;
+  padding: 10px;
+}
+
+.card {
+  width: 90%;
+  margin-left: 20px;
+}
+
+.card button {
+  width: 90%;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-top: 50px;
+}
 
 /* ==========================================================================
    Helper classes
@@ -283,9 +319,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -296,6 +332,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -363,4 +400,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
