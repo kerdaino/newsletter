@@ -138,11 +138,14 @@ button {
   font-weight: 700;
 }
 
-button:hover {
+button:active {
   background-color: hsl(4, 100%, 67%);
-  cursor: pointer;
-  transition: 0.6s;
 }
+
+button:hover{
+  cursor: pointer;
+}
+
 
 ul {
   list-style-image: url(../img/icon-list.svg);
@@ -153,10 +156,6 @@ li {
   padding-top: 0;
   margin-top: 0;
 }
-
- .hide {
-  display: none;
-} 
 
 /* mobile styles */
 
@@ -175,6 +174,7 @@ li {
 .half-width1 img {
   width: 100%;
 }
+
 
 .half-width2 {
   display: flex;
@@ -212,6 +212,10 @@ form {
   width: 15%;
   margin: 20px;
   padding: 10px;
+}
+
+.content-wrapper2 ,.hide{
+  display: none;
 }
 
 .card {
@@ -314,39 +318,98 @@ form {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px){
+  /* tablet styles */
+  p{
+    font-size: 25px;
+  }
+
+  li{
+    font-size: 25px;
+  }
+
+  form{
+    width: 80%;
+  }
+   }
+
+
+@media only screen and (min-width: 1200px) {
   /* Desktop styles */
 
-  body{
-    width: 80%;
+  body {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
   }
 
-  .content-wrapper{
+  .content-wrapper {
     display: flex;
+    width: 800px;
+    overflow: auto;
     border-radius: 25px;
-    margin: 50px 0 0 300px;
+    margin: 50px 50px 0 50px;
     padding: 20px;
     flex-direction: row-reverse;
   }
 
-  .content-wrapper2{
-    width: 50%;
-    padding: 0;
-    border-radius: 25px;
+  .hide {
+    display: none;
   }
 
-  .half-width1{
+  .content-wrapper2 {
+    width: 400px;
+    padding: 0;
+    border-radius: 25px;
+    height: 500px;
+    box-sizing: content-box;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    margin-left: 200px;
+    padding-left: 20px;
+  }
+
+  .half-width1 {
     content: url(../img/illustration-sign-up-desktop.svg);
-    width: 50%;
-    padding: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .half-width1 img{
+    margin: 0;
+    padding: 0;
   }
 
   .half-width2{
-    /* width: 50%; */
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: auto;
+  }
+
+
+  .card {
+    padding: 0px;
+    margin-right: 0;
+    width: 90%;
+  }
+
+  .card h1 {
+    width: 80%;
+  }
+
+  .card button {
+    margin-bottom: 0;
+    margin-right: 0;
+
+  }
+
+  .content-wrapper2 img {
+    padding: 0;
+    margin-top: 0;
   }
 }
 
