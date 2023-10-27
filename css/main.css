@@ -142,7 +142,7 @@ button:active {
   background-color: hsl(4, 100%, 67%);
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
 }
 
@@ -205,16 +205,17 @@ form {
   flex-direction: column;
   margin: 0;
   padding-left: 10px;
+  padding-right: 0;
   height: 100vh;
 }
 
 .content-wrapper2 img {
-  width: 15%;
+  width: 80px;
   margin: 20px;
   padding: 10px;
 }
 
-.content-wrapper2 ,.hide{
+.hide {
   display: none;
 }
 
@@ -224,10 +225,10 @@ form {
 }
 
 .card button {
-  width: 90%;
+  width: 300px;
   margin-left: 0;
   margin-right: 10px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 /* ==========================================================================
@@ -318,20 +319,21 @@ form {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
+
   /* tablet styles */
-  p{
+  p {
     font-size: 25px;
   }
 
-  li{
+  li {
     font-size: 25px;
   }
 
-  form{
+  form {
     width: 80%;
   }
-   }
+}
 
 
 @media only screen and (min-width: 1200px) {
@@ -346,11 +348,12 @@ form {
 
   .content-wrapper {
     display: flex;
-    width: 800px;
+    width: 900px;
     overflow: auto;
     border-radius: 25px;
-    margin: 50px 50px 0 50px;
-    padding: 20px;
+    margin: 70px 20px;
+    padding-right: 20px;
+    padding-bottom: 0;
     flex-direction: row-reverse;
   }
 
@@ -359,16 +362,22 @@ form {
   }
 
   .content-wrapper2 {
-    width: 400px;
+    width: 500px;
     padding: 0;
     border-radius: 25px;
-    height: 500px;
-    box-sizing: content-box;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    height: 600px;
+    margin-top: 200px;
+    margin-bottom: 0;
     font-size: 16px;
-    margin-left: 200px;
     padding-left: 20px;
+    padding-right: 0;
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 0;
+  }
+
+  form {
+    font-size: 20px;
   }
 
   .half-width1 {
@@ -377,12 +386,12 @@ form {
     margin: 0;
   }
 
-  .half-width1 img{
+  .half-width1 img {
     margin: 0;
     padding: 0;
   }
 
-  .half-width2{
+  .half-width2 {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 0;
@@ -395,21 +404,32 @@ form {
     padding: 0px;
     margin-right: 0;
     width: 90%;
+    justify-content: center;
+    align-items: center;
   }
 
   .card h1 {
     width: 80%;
+    font-size: 50px;
+    padding-right: 0;
+    margin-right: 0;
   }
 
   .card button {
-    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+    margin-bottom: 10px;
     margin-right: 0;
-
+    margin-top: 0;
+    font-size: 20px;
   }
 
   .content-wrapper2 img {
     padding: 0;
     margin-top: 0;
+    width: 20%;
+    margin-bottom: 0;
   }
 }
 

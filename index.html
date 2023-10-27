@@ -15,7 +15,6 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
 
-    <!-- Add your site or application content here -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -24,11 +23,13 @@
 
 <body>
 
-    <!-- Add your site or application content here -->
+    <!-- Section 1: Newsletter Sign-up Form -->
     <section class="content-wrapper">
+        <!-- Left Half: Image -->
         <div class="img half-width1">
             <img src="img/illustration-sign-up-mobile.svg" alt="screen-image">
         </div>
+        <!-- Right Half: Form and Information -->
         <div class="half-width2">
             <h1>stay updated!</h1>
             <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -38,7 +39,8 @@
                 <li>And much more!</li>
             </ul>
 
-            <form>
+            <!-- Sign-up Form -->
+            <form id="subscribeForm">
                 <label for="email">Email address</label>
                 <input type="email" id="email" placeholder="email@company.com">
                 <button type="submit">Subscribe to monthly newsletter</button>
@@ -46,16 +48,19 @@
         </div>
     </section>
 
-    <section class="content-wrapper2">
+    <!-- Section 2: Success Message (Initially Hidden) -->
+    <section class="content-wrapper2 hide">
         <img src="img/icon-success.svg" alt="icon-success">
         <div class="card">
             <h1> Thanks for subscribing!</h1>
-            <p>A confirmation email has been sent to <span><strong>ash@loremcompany.com</strong></span>. Please open it
+            <p>A confirmation email has been sent to <span
+                    class="email-span"><strong>ash@loremcompany.com</strong></span>. Please open it
                 and click the button inside to confirm your subscription.</p>
             <button class="dismiss-button">Dismiss message</button>
         </div>
     </section>
 
+    <!-- JavaScript files -->
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
